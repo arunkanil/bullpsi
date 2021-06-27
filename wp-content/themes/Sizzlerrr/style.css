@@ -89,8 +89,8 @@ a:hover {
 }
 .wrapperHead .wrapperHeadIn .hatchLogo {
 	position:absolute;
-	top:45px;
-	left:50px;
+	top:15px;
+	left:30px;
 	margin:0;
 	width:90px;
 	height:auto;
@@ -2407,3 +2407,20 @@ h4 {
     z-index: 800;
 
 }
+@media screen and (max-width: 767px) {   
+	.small_carousel_displayer{
+		display: block;
+	}
+	.large_carousel_displayer {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {      
+	.small_carousel_displayer {
+		display: none;
+	}
+	.large_carousel_displayer {
+		display: block;
+	}
+} 
