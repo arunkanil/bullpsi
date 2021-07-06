@@ -37,58 +37,58 @@ jQuery(document).ready(function ($) {
     }
 	
 	
-	// (function(){
+	(function(){
 	
-	//   var doc = document.documentElement;
-	//   var w = window;
+	  var doc = document.documentElement;
+	  var w = window;
 	
-	//   var prevScroll = w.scrollY || doc.scrollTop;
-	//   var curScroll;
-	//   var direction = 0;
-	//   var prevDirection = 0;
+	  var prevScroll = w.scrollY || doc.scrollTop;
+	  var curScroll;
+	  var direction = 0;
+	  var prevDirection = 0;
 		
-	//   var checkScroll = function() {
+	  var checkScroll = function() {
 	
-	// 	/*
-	// 	** Find the direction of scroll
-	// 	** 0 - initial, 1 - up, 2 - down
-	// 	*/
+		/*
+		** Find the direction of scroll
+		** 0 - initial, 1 - up, 2 - down
+		*/
 	
-	// 	curScroll = w.scrollY || doc.scrollTop;
-	// 	if (curScroll > prevScroll) { 
-	// 	  //scrolled up
-	// 	  direction = 2;
-	// 	}
-	// 	else if (curScroll < prevScroll) { 
-	// 	  //scrolled down
-	// 	  direction = 1;
-	// 	}
+		curScroll = w.scrollY || doc.scrollTop;
+		if (curScroll > prevScroll) { 
+		  //scrolled up
+		  direction = 2;
+		}
+		else if (curScroll < prevScroll) { 
+		  //scrolled down
+		  direction = 1;
+		}
 	
-	// 	if (direction !== prevDirection) {
-	// 	  toggleHeader(direction, curScroll);
-	// 	}
+		if (direction !== prevDirection) {
+		  toggleHeader(direction, curScroll);
+		}
 		
-	// 	prevScroll = curScroll;
-	//   };
+		prevScroll = curScroll;
+	  };
 	
-	//   var toggleHeader = function(direction, curScroll) {	  
-	// 	if (direction === 2 && curScroll > 150) { 	
-	// 	  $('#header').addClass('hide');
-	// 	  if ( $('#nav').data('state')==1 ) {
-	// 			$('#nav').slideUp(.2);
-	// 			$('#hamburger').removeClass('opened');
-	// 	  }
-	// 	  prevDirection = direction;
-	// 	}
-	// 	else if (direction === 1) {
-	// 	  $('#header').removeClass('hide');
-	// 	  prevDirection = direction;
-	// 	}
-	//   };
+	  var toggleHeader = function(direction, curScroll) {	  
+		if (direction === 2 && curScroll > 150) { 	
+		  $('#header').addClass('hide');
+		  if ( $('#nav').data('state')==1 ) {
+				$('#nav').slideUp(.2);
+				$('#hamburger').removeClass('opened');
+		  }
+		  prevDirection = direction;
+		}
+		else if (direction === 1) {
+		  $('#header').removeClass('hide');
+		  prevDirection = direction;
+		}
+	  };
 	  
-	//   window.addEventListener('scroll', checkScroll);
+	  window.addEventListener('scroll', checkScroll);
 	
-	// })();
+	})();
 	
 	
 	
