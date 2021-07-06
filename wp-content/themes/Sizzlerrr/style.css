@@ -2599,15 +2599,21 @@ option {
 }
 .btn-item,
 button {
-  padding: 10px 5px;
-  margin-top: 20px;
-  border-radius: 5px;
-  border: none;
-  background: #26a9e0;
+  display: block;
+  margin: 25px 0 0 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  background-color: #ffd400;
+  background-image: url(images/btnbg.gif);
+  font-family: "Roboto", sans-serif;
+  color: #313133;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 400;
-  color: #fff;
+  text-transform: uppercase;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.15s ease-out;
+  border: solid 2px #ffd400;
 }
 .btn-item {
   display: inline-block;
@@ -2618,7 +2624,7 @@ button {
 }
 button:hover,
 .btn-item:hover {
-  background: #85d6de;
+  background-position: left bottom;
 }
 @media (min-width: 568px) {
   html,
